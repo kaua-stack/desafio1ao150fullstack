@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Full Stack - 150 Dias</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Desafio Full Stack - 150 Dias</h1>
+            <p>Aprenda desenvolvimento full stack em 150 dias com desafios práticos diários.</p>
+        </header>
+
+        <div class="counter">
+            <h2>Progresso do Desafio</h2>
+            <div class="counter-display">
+                <p id="days-left">150</p>
+                <span>dias restantes</span>
+            </div>
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="theme-description">
+            <h2>Tema Atual: <span id="theme-title">Carregando...</span></h2>
+            <p id="theme-text">Carregando informações do tema...</p>
+        </div>
+
+        <div class="filter-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Pesquisar por tema...">
+                <button id="search-button">Buscar</button>
+            </div>
+            <div class="filter-container">
+                <select id="status-filter">
+                    <option value="all">Todos os dias</option>
+                    <option value="completed">Concluídos</option>
+                    <option value="pending">Pendentes</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="day-list" class="day-list">
+            <!-- Os dias serão renderizados aqui pelo JavaScript -->
+            <div class="loading">Carregando dias do desafio...</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Desafio Full Stack - 150 Dias. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="days.js"></script>
+</body>
+</html>
